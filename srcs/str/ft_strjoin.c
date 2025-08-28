@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/12 13:55:03 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 15:00:22 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:19:32 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s3[i + j] = '\0';
 	return (s3);
 }
-
-// int	main(void)
-// {
-// 	char	s1[10] = "Hello";
-// 	char	s2[10] = ", world!";
-// 	printf("ft_strjoin: {%s}\n", ft_strjoin(s1, s2)); // Hello, world!
-// }

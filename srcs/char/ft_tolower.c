@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 09:51:52 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 15:00:09 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:18:03 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,3 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
-
-// int	main(void)
-// {
-// 	int	c;
-// 	int	cc;
-// 
-// 	c = 'B';
-// 	cc = 'B';
-// 	printf("before ft_tolower: %c\n", c);
-// 	printf("after ft_tolower: %c\n", ft_tolower(c));
-// 	printf("before tolower: %c\n", cc);
-// 	printf("after tolower: %c\n", tolower(cc));
-// }

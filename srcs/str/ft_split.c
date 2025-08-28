@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/17 12:32:25 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 15:00:22 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:19:19 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,16 +69,3 @@ char	**ft_split(char const *s, char c)
 	str[i] = NULL;
 	return (str);
 }
-
-// int	main(void)
-// {
-// 	int	i;
-
-// 	i = 0;
-// 	char	*str;
-// 	char	**array_s;
-// 	str = "cool bro nice awesome not nice";
-// 	array_s = ft_split(str, '\0');
-// 	while (*array_s)
-// 		printf("{%s}\n", *array_s++);
-// }

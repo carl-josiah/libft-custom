@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 16:33:54 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 15:00:05 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:16:58 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,3 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	char	c1;
-// 	char	c2;
-// 
-// 	c1 = ' ';
-// 	c2 = 31;
-// 	printf("ft_isprint: %d\n", ft_isprint(c1));
-// 	printf("ft_isprint: %d\n", ft_isprint(c2));
-// 	printf("isprint: %d\n", isprint(c1));
-// 	printf("isprint: %d\n", isprint(c2));
-// }

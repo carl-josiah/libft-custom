@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 14:48:34 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 15:00:22 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:19:14 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,13 +38,3 @@ int	ft_atoi(const char *str)
 	}
 	return (nbr * sign);
 }
-
-// int	main(void)
-// {
-// 	char	str1[] = "   -214748364721474836471234567";
-// 	char	str2[] = "   214748364721474836471234567";
-// 	printf("ft_atoi: %d\n", ft_atoi(str1));
-// 	printf("atoi: %d\n", atoi(str1));
-// 	printf("ft_atoi: %d\n", ft_atoi(str2));
-// 	printf("atoi: %d\n", atoi(str2));
-// }

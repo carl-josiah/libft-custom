@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 16:02:31 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 15:00:22 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:19:16 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,11 +56,3 @@ char	*ft_itoa(int n)
 		s[0] = '-';
 	return (s);
 }
-
-// int	main(void)
-// {
-// 	int	nbr = 10;
-// 	// printf("count: %zu\n", n_count(nbr));
-// 	// printf("%s","0");
-// 	printf("%s\n", ft_itoa(nbr));
-// }

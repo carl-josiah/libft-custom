@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 17:13:46 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 15:00:22 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:18:57 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,16 +24,3 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(s, size * count);
 	return (s);
 }
-
-// int	main(void)
-// {
-// 	int	i;
-// 	int	count;
-// 	int	*array;
-
-// 	i = -1;
-// 	count = 5;
-// 	array = (int *) ft_calloc(count, sizeof(int));
-// 	while (++i < count)
-// 		printf("{%d}\n", array[i]);
-// }

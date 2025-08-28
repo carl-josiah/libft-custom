@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 09:59:19 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 15:00:22 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:19:50 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return ((unsigned char) s1[i] - (unsigned char) s2[i]);
 }
-
-// int	main(void)
-// {
-// 	char	s1[20] = "Hellop";
-// 	char	s2[20] = "Hellos";
-// 	size_t	n;
-// 
-// 	n = 0;
-// 	printf("ft_strncmp: %d\n", ft_strncmp(s1, s2, n));
-// 	printf("strncmp: %d\n", strncmp(s1, s2, n));
-// }

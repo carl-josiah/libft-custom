@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/02 16:58:32 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 15:00:22 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:18:14 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,3 @@ void	ft_putendl_fd(char *s, int fd)
 		write(fd, &s[i], 1);
 	write(fd, "\n", 1);
 }
-
-// int	main(void)
-// {
-// 	ft_putendl_fd("Hello", 1);
-// }

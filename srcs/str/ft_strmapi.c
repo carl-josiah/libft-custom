@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/07 09:44:23 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 15:00:22 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:19:46 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,18 +28,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	s1[i] = '\0';
 	return (s1);
 }
-
-// static char	my_toupper(unsigned int i, char c)
-// {
-// 	(void) i;
-// 	if (c >= 'a' && c <= 'z')
-// 		return (c - 32);
-// 	return (c);
-// }
-
-// int	main(void)
-// {
-// 	char str[6] = "hello";
-
-// 	printf("%s\n", ft_strmapi(str, my_toupper));
-// }

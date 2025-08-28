@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 17:14:22 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 15:00:22 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:18:52 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,3 @@ void	ft_bzero(void *s, size_t n)
 	while (n--)
 		*ps++ = '\0';
 }
-
-// int	main(void)
-// {
-// 	char	s1[] = "HEllo bro";
-// 	char	s2[] = "HEllo bro";
-// 	ft_bzero(s1, 65535);
-// 	bzero(s1, 65535);
-// 	printf("ft_bzero: %s\n", s1);
-// 	printf("bzero: %s\n", s2);
-// }

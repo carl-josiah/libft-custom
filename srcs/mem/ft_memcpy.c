@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 15:54:55 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 15:00:22 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:19:06 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		pdst[i] = psrc[i];
 	return (dst);
 }
-
-// int	main(void)
-// {
-// 	char	s1[10] = "condition";
-// 	char	s2[10] = "condition";
-// 	printf("before ft_memcpy: %s\n", s1);
-// 	ft_memcpy(s1 + 2, s1, 6);
-// 	printf("after ft_memcpy: %s\n", s1);
-// 	printf("before memcpy: %s\n", s2);
-//  memcpy(s2 + 2, s2, 6);
-// 	printf("after: %s\n", s2);
-// }

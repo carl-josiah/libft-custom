@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/23 12:52:00 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 18:18:29 by ccastro          ###   ########.fr       */
+/*   Created: 2025/08/28 18:14:30 by ccastro           #+#    #+#             */
+/*   Updated: 2025/08/28 18:20:58 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incs/libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void *))
+int	ft_isspace(int c)
 {
-	t_list	*next;
-
-	if (*lst == NULL)
-		return ;
-	while (*lst)
-	{
-		next = (*lst)->next;
-		ft_lstdelone(*lst, del);
-		*lst = next;
-	}
-	*lst = NULL;
+	return ((c >= 9 && c <= 13) || c == 32);
 }

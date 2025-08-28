@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 14:24:03 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 15:00:22 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:19:03 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	char	s1[20] = "Hellos";
-// 	char	s2[20] = "Hellop";
-// 	size_t	n;
-
-// 	n = 6;
-// 	printf("ft_memcmp: %d\n", ft_memcmp(s1, s2, n));
-// 	printf("memcmp: %d\n", memcmp(s1, s2, n));
-// }

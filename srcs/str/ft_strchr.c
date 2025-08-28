@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 11:08:39 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 15:00:22 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:19:22 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,16 +29,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *) &s[i]);
 	return (NULL);
 }
-
-// int	main(void)
-// {
-// 	char	s[30] = "Banana Apples Oranges";
-// 	char	ss[30] = "Banana Apples Oranges";
-// 	int		c;
-// 
-// 	c = 'l';
-// 	printf("before ft_strchr: %s\n", s);
-// 	printf("after ft_strchr: %s\n", ft_strchr(s, c));
-// 	printf("before strchr: %s\n", ss);
-// 	printf("after strchr: %s\n", strchr(ss, c));
-// }

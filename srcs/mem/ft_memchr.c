@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 16:04:55 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 15:00:22 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:19:01 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,18 +29,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-// int	main(void)
-// {
-// 	char	*s;
-// 	int		c;
-// 	size_t	n;
-
-// 	s = "Hello world";
-// 	c = 'l';
-// 	n = 3;
-// 	printf("before: %s\n", s);
-// 	printf("after ft_memchr: %s\n", ft_memchr(s, c, n));
-// 	printf("before: %s\n", s);
-// 	printf("after memchr: %s\n", memchr(s, c, n));
-// }

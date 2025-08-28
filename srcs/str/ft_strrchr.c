@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/09 12:23:02 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 15:00:22 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:19:56 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *) &s[i]);
 	return (NULL);
 }
-
-// int	main(void)
-// {
-// 	char	*s;
-// 	char	c;
-
-// 	s = "Candy mandy mandy";
-// 	c = 'm';
-// 	printf("ft_strrchr: %s\n", ft_strrchr(s, c));
-// 	printf("ft_strrchr: %s\n", strrchr(s, c));
-// }
