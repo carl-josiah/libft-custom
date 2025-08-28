@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 13:48:24 by ccastro           #+#    #+#             */
-/*   Updated: 2025/08/28 14:55:26 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:23:28 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <limits.h>
+# include <stdint.h>
 
 typedef struct s_list
 {
@@ -30,6 +31,7 @@ int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
+int		ft_isspace(int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 

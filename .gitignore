@@ -1,3 +1,5 @@
 *.o
 objs
 libft.a
+a.out
+.vscode
