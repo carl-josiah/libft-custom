@@ -17,7 +17,7 @@ CHAR_SRCS	:= $(addprefix $(CHAR_DIR),	ft_isalnum.c \
 										ft_tolower.c \
 										ft_toupper.c \
 										)
-FD_SRCS	:= $(addprefix $(FD_DIR),		ft_putchar_fd.c \
+FD_SRCS		:= $(addprefix $(FD_DIR),	ft_putchar_fd.c \
 										ft_putendl_fd.c \
 										ft_putnbr_fd.c \
 										ft_putstr_fd.c \
