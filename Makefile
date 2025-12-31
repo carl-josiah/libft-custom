@@ -1,12 +1,24 @@
 NAME		:= libft.a
 
+CC			:= cc
+CC_FLAGS	:= -Wall -Wextra -Werror
+AR_FLAGS	:= -r -c -s
+INCS		:= -I. -I$(PRINTF_DIR) -I$(GNL_DIR)
+
+PRINTF_DIR	:= ft_printf/
+GNL_DIR		:= gnl/
+OBJS_DIR	:= objs/
+
 CHAR_DIR	:= srcs/char/
 FD_DIR		:= srcs/fd/
 LIST_DIR	:= srcs/list/
 MEM_DIR		:= srcs/mem/
 MISC_DIR	:= srcs/misc/
 STR_DIR		:= srcs/str/
-OBJS_DIR	:= objs/
+
+GNL_SRCS	:= $(addprefix $(GNL_DIR),	get_next_line_bonus.c \
+										get_next_line_utils.c \
+										)
 
 CHAR_SRCS	:= $(addprefix $(CHAR_DIR),	ft_isalnum.c \
 										ft_isalpha.c \
@@ -17,11 +29,13 @@ CHAR_SRCS	:= $(addprefix $(CHAR_DIR),	ft_isalnum.c \
 										ft_tolower.c \
 										ft_toupper.c \
 										)
+
 FD_SRCS		:= $(addprefix $(FD_DIR),	ft_putchar_fd.c \
 										ft_putendl_fd.c \
 										ft_putnbr_fd.c \
 										ft_putstr_fd.c \
 										)
+
 LIST_SRCS	:= $(addprefix $(LIST_DIR),	ft_lstadd_back.c \
 										ft_lstadd_front.c \
 										ft_lstclear.c \
@@ -32,6 +46,7 @@ LIST_SRCS	:= $(addprefix $(LIST_DIR),	ft_lstadd_back.c \
 										ft_lstnew.c \
 										ft_lstsize.c \
 										)
+
 MEM_SRCS	:= $(addprefix $(MEM_DIR),	ft_bzero.c \
 										ft_calloc.c \
 										ft_memchr.c \
@@ -40,8 +55,10 @@ MEM_SRCS	:= $(addprefix $(MEM_DIR),	ft_bzero.c \
 										ft_memmove.c \
 										ft_memset.c \
 										)
+
 MISC_SRCS	:= $(addprefix $(MISC_DIR),	ft_atoi.c \
 										)
+
 STR_SRCS	:= $(addprefix $(STR_DIR),	ft_itoa.c \
 										ft_split.c \
 										ft_strchr.c \
@@ -64,13 +81,10 @@ SRCS		:=	$(CHAR_SRCS) \
 				$(LIST_SRCS) \
 				$(MEM_SRCS) \
 				$(MISC_SRCS) \
-				$(STR_SRCS)
+				$(STR_SRCS) \
+				$(GNL_SRCS)
 
 OBJS		:= $(SRCS:%.c=$(OBJS_DIR)%.o)
-
-CC_FLAGS	:= -Wall -Wextra -Werror
-
-AR_FLAGS	:= -r -c -s
 
 RED			:= '\033[0;31m'
 RED_BOLD	:= '\033[1;31m'
@@ -82,20 +96,24 @@ GREEN_BOLD	:= '\033[1;32m'
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	@ar $(AR_FLAGS) $@ $^
-	@echo $(GREEN)"created libft.a!"$(WHITE)
+	@make -C $(PRINTF_DIR)
+	@cp $(PRINTF_DIR)libftprintf.a $(NAME)
+	@ar -rcs $(NAME) $(OBJS)
+	@echo "$(GREEN)libft.a created!$(WHITE)"
 
 $(OBJS_DIR)%.o: %.c
 	@mkdir -p $(dir $@)
-	@cc $(CC_FLAGS) -c $< -o $@
+	@$(CC) $(CC_FLAGS) $(INCS) -c $< -o $@
 
 clean:
-	@rm -r -f $(OBJS_DIR)
-	@echo $(RED)"deleting obj files..."$(WHITE)
+	@rm -rf $(OBJS_DIR)
+	@make clean -C $(PRINTF_DIR)
+	@echo "$(RED)object files deleted!$(WHITE)"
 
 fclean: clean
 	@rm -f $(NAME)
-	@echo $(RED)"deleting archive file!"$(WHITE)
+	@make fclean -C $(PRINTF_DIR)
+	@echo "$(RED)$(NAME) and ft_printf.a deleted$(WHITE)"
 
 re: fclean all
 
