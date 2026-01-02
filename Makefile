@@ -3,7 +3,6 @@ NAME		:= libft.a
 CC			:= cc
 CC_FLAGS	:= -Wall -Wextra -Werror
 AR_FLAGS	:= -r -c -s
-INCS		:= -I. -I$(PRINTF_DIR) -I$(GNL_DIR)
 
 PRINTF_DIR	:= ft_printf/
 GNL_DIR		:= gnl/
@@ -15,6 +14,8 @@ LIST_DIR	:= srcs/list/
 MEM_DIR		:= srcs/mem/
 MISC_DIR	:= srcs/misc/
 STR_DIR		:= srcs/str/
+
+INCS		:= -I. -I$(PRINTF_DIR) -I$(GNL_DIR)
 
 GNL_SRCS	:= $(addprefix $(GNL_DIR),	get_next_line_bonus.c \
 										get_next_line_utils.c \
