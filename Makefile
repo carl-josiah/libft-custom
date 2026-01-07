@@ -78,7 +78,8 @@ STR_SRCS	:= $(addprefix $(STR_DIR),	ft_itoa.c \
 										ft_substr.c \
 										)
 
-CLEAN_SRCS	:= $(addprefix $(CLEAN_DIR),	ft_free_str_arr.c \
+CLEAN_SRCS	:= $(addprefix $(CLEAN_DIR),	ft_free_str_array.c \
+			   								ft_free_ptr.c \
 			   								)
 
 SRCS		:=	$(CHAR_SRCS) \
