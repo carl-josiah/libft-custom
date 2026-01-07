@@ -6,13 +6,13 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 00:52:06 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/08 00:52:47 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/01/08 00:59:52 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incs/libft.h"
 
-void	free_ptr(void **ptr)
+void	ft_free_ptr(void **ptr)
 {
 	if (ptr && *ptr)
 	{
