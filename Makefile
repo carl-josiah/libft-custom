@@ -14,6 +14,7 @@ LIST_DIR	:= srcs/list/
 MEM_DIR		:= srcs/mem/
 MISC_DIR	:= srcs/misc/
 STR_DIR		:= srcs/str/
+CLEAN_DIR	:= srcs/clean/
 
 INCS		:= -I. -I$(PRINTF_DIR) -I$(GNL_DIR)
 
@@ -77,13 +78,17 @@ STR_SRCS	:= $(addprefix $(STR_DIR),	ft_itoa.c \
 										ft_substr.c \
 										)
 
+CLEAN_SRCS	:= $(addprefix $(CLEAN_DIR),	ft_free_str_arr.c \
+			   								)
+
 SRCS		:=	$(CHAR_SRCS) \
 				$(FD_SRCS) \
 				$(LIST_SRCS) \
 				$(MEM_SRCS) \
 				$(MISC_SRCS) \
 				$(STR_SRCS) \
-				$(GNL_SRCS)
+				$(GNL_SRCS) \
+				$(CLEAN_SRCS)
 
 OBJS		:= $(SRCS:%.c=$(OBJS_DIR)%.o)
 

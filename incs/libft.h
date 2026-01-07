@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 13:48:24 by ccastro           #+#    #+#             */
-/*   Updated: 2025/12/31 16:36:50 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/01/08 00:53:03 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,10 @@ int		ft_isprint(int c);
 int		ft_isspace(int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+
+// clean functions
+void	ft_free_str_array(char ***arr);
+void	free_ptr(void **ptr);
 
 // fd functions
 void	ft_putchar_fd(char c, int fd);
