@@ -15,6 +15,7 @@ MEM_DIR		:= srcs/mem/
 MISC_DIR	:= srcs/misc/
 STR_DIR		:= srcs/str/
 CLEAN_DIR	:= srcs/clean/
+CUSTOM_DIR	:= srcs/custom
 
 INCS		:= -I. -I$(PRINTF_DIR) -I$(GNL_DIR)
 
@@ -82,6 +83,9 @@ CLEAN_SRCS	:= $(addprefix $(CLEAN_DIR),	ft_free_str_array.c \
 			   								ft_free_ptr.c \
 			   								)
 
+CUSTOM_SRCS	:= $(addprefix $(CUSTOM_DIR),	ft_count_words.c \
+			   								)
+
 SRCS		:=	$(CHAR_SRCS) \
 				$(FD_SRCS) \
 				$(LIST_SRCS) \
@@ -89,7 +93,8 @@ SRCS		:=	$(CHAR_SRCS) \
 				$(MISC_SRCS) \
 				$(STR_SRCS) \
 				$(GNL_SRCS) \
-				$(CLEAN_SRCS)
+				$(CLEAN_SRCS) \
+				$(CUSTOM_SRCS) \
 
 OBJS		:= $(SRCS:%.c=$(OBJS_DIR)%.o)
 
