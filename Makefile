@@ -9,13 +9,14 @@ GNL_DIR		:= gnl/
 OBJS_DIR	:= objs/
 
 CHAR_DIR	:= srcs/char/
+CLEAN_DIR	:= srcs/clean/
+CUSTOM_DIR	:= srcs/custom/
 FD_DIR		:= srcs/fd/
 LIST_DIR	:= srcs/list/
 MEM_DIR		:= srcs/mem/
 MISC_DIR	:= srcs/misc/
 STR_DIR		:= srcs/str/
 CLEAN_DIR	:= srcs/clean/
-CUSTOM_DIR	:= srcs/custom
 
 INCS		:= -I. -I$(PRINTF_DIR) -I$(GNL_DIR)
 
@@ -32,6 +33,16 @@ CHAR_SRCS	:= $(addprefix $(CHAR_DIR),	ft_isalnum.c \
 										ft_tolower.c \
 										ft_toupper.c \
 										)
+
+CLEAN_SRCS	:= $(addprefix $(CLEAN_DIR),	ft_free_ptr.c \
+			   								ft_free_str_array.c \
+											)
+
+CUSTOM_SRCS	:= $(addprefix $(CUSTOM_DIR),	ft_count_words.c \
+			   								ft_is_empty.c \
+											ft_is_included.c \
+											ft_atoi_safe.c \
+											)
 
 FD_SRCS		:= $(addprefix $(FD_DIR),	ft_putchar_fd.c \
 										ft_putendl_fd.c \
@@ -79,22 +90,15 @@ STR_SRCS	:= $(addprefix $(STR_DIR),	ft_itoa.c \
 										ft_substr.c \
 										)
 
-CLEAN_SRCS	:= $(addprefix $(CLEAN_DIR),	ft_free_str_array.c \
-			   								ft_free_ptr.c \
-			   								)
-
-CUSTOM_SRCS	:= $(addprefix $(CUSTOM_DIR),	ft_count_words.c \
-			   								)
-
 SRCS		:=	$(CHAR_SRCS) \
+				$(CLEAN_SRCS) \
+				$(CUSTOM_SRCS) \
 				$(FD_SRCS) \
 				$(LIST_SRCS) \
 				$(MEM_SRCS) \
 				$(MISC_SRCS) \
 				$(STR_SRCS) \
 				$(GNL_SRCS) \
-				$(CLEAN_SRCS) \
-				$(CUSTOM_SRCS) \
 
 OBJS		:= $(SRCS:%.c=$(OBJS_DIR)%.o)
 

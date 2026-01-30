@@ -1,34 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_count_words.c                                   :+:      :+:    :+:   */
+/*   ft_is_included.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/28 06:33:40 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/29 13:43:27 by ccastro          ###   ########.fr       */
+/*   Created: 2026/01/28 06:47:16 by ccastro           #+#    #+#             */
+/*   Updated: 2026/01/28 06:54:50 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incs/libft.h"
 
-size_t	ft_count_words(const char *s, const char *set)
+int	ft_is_included(char *line, const char *inc)
 {
-	size_t	words;
-
-	words = 0;
-	while (ft_strchr(set, *s))
-		s++;
-	while (*s)
+	while (*line)
 	{
-		if (!ft_strchr(set, *s))
-		{
-			words++;
-			while (*s && !ft_strchr(set, *s))
-				s++;
-		}
-		else
-			s++;
+		if (!(ft_strchr(inc, *line) != NULL))
+			return (0);
+		line++;
 	}
-	return (words);
+	return (1);
 }
