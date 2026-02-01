@@ -42,6 +42,8 @@ CUSTOM_SRCS	:= $(addprefix $(CUSTOM_DIR),	ft_count_words.c \
 			   								ft_is_empty.c \
 											ft_is_included.c \
 											ft_atoi_safe.c \
+											ft_ischar.c \
+											ft_nbrlen.c \
 											)
 
 FD_SRCS		:= $(addprefix $(FD_DIR),	ft_putchar_fd.c \
@@ -76,6 +78,7 @@ MISC_SRCS	:= $(addprefix $(MISC_DIR),	ft_atoi.c \
 STR_SRCS	:= $(addprefix $(STR_DIR),	ft_itoa.c \
 										ft_split.c \
 										ft_strchr.c \
+										ft_strcspn.c \
 										ft_strdup.c \
 										ft_striteri.c \
 										ft_strjoin.c \

@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 13:48:24 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/31 00:00:16 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/01 18:18:00 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,8 @@ size_t	ft_count_words(const char *s, const char *set);
 int		ft_is_empty(char *line);
 int		ft_is_included(char *line, const char *inc);
 int		ft_atoi_safe(const char *str, int *out);
+int		ft_ischar(int c, int compare);
+size_t	ft_nbrlen(int n);
 
 // fd functions
 void	ft_putchar_fd(char c, int fd);
@@ -80,6 +82,7 @@ int		ft_atoi(const char *str);
 char	*ft_itoa(int n);
 char	**ft_split(char const *s, char c);
 char	*ft_strchr(const char *s, int c);
+size_t	ft_strcspn(const char *str, const char *charset);
 char	*ft_strdup(const char *s1);
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strjoin(char const *s1, char const *s2);
