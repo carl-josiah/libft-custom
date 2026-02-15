@@ -40,10 +40,10 @@ CLEAN_SRCS	:= $(addprefix $(CLEAN_DIR),	ft_free_ptr.c \
 
 CUSTOM_SRCS	:= $(addprefix $(CUSTOM_DIR),	ft_count_words.c \
 			   								ft_is_empty.c \
-											ft_is_included.c \
 											ft_atoi_safe.c \
 											ft_ischar.c \
 											ft_nbrlen.c \
+											ft_str_is_charset.c \
 											)
 
 FD_SRCS		:= $(addprefix $(FD_DIR),	ft_putchar_fd.c \

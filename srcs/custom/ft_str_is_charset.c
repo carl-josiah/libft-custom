@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_included.c                                   :+:      :+:    :+:   */
+/*   ft_str_is_charset.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 06:47:16 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/28 06:54:50 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/15 12:44:23 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incs/libft.h"
 
-int	ft_is_included(char *line, const char *inc)
+int	ft_str_is_charset(char *line, const char *allowed)
 {
 	while (*line)
 	{
-		if (!(ft_strchr(inc, *line) != NULL))
+		if (!ft_strchr(allowed, *line))
 			return (0);
 		line++;
 	}

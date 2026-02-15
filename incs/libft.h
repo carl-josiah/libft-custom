@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 13:48:24 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/01 18:18:00 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/02/15 12:04:29 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	ft_free_ptr(void **ptr);
 // custom functions
 size_t	ft_count_words(const char *s, const char *set);
 int		ft_is_empty(char *line);
-int		ft_is_included(char *line, const char *inc);
+int		ft_str_is_charset(char *line, const char *allowed);
 int		ft_atoi_safe(const char *str, int *out);
 int		ft_ischar(int c, int compare);
 size_t	ft_nbrlen(int n);
