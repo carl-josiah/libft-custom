@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_charset.c                                :+:      :+:    :+:   */
+/*   ft_str_has_charset.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 06:47:16 by ccastro           #+#    #+#             */
-/*   Updated: 2026/02/15 12:44:23 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/03/16 16:50:54 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incs/libft.h"
 
-int	ft_str_is_charset(char *line, const char *allowed)
+int	ft_str_has_charset(char *line, const char *allowed)
 {
 	while (*line)
 	{

@@ -43,7 +43,7 @@ CUSTOM_SRCS	:= $(addprefix $(CUSTOM_DIR),	ft_count_words.c \
 											ft_atoi_safe.c \
 											ft_ischar.c \
 											ft_nbrlen.c \
-											ft_str_is_charset.c \
+											ft_str_has_charset.c \
 											)
 
 FD_SRCS		:= $(addprefix $(FD_DIR),	ft_putchar_fd.c \
