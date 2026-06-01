@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 00:44:15 by ccastro           #+#    #+#             */
-/*   Updated: 2026/01/08 00:56:01 by ccastro          ###   ########.fr       */
+/*   Updated: 2026/06/01 22:36:24 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 void	ft_free_str_array(char ***arr)
 {
-	char	**tmp;
+	int	i;
 
 	if (!arr || !*arr)
 		return ;
-	tmp = *arr;
-	while (*tmp)
+	i = 0;
+	while (*(arr)[i])
 	{
-		free(*tmp);
-		tmp++;
+		free(*(arr)[i]);
+		++i;
 	}
 	free(*arr);
 	*arr = NULL;
