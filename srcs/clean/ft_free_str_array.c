@@ -19,9 +19,9 @@ void	ft_free_str_array(char ***arr)
 	if (!arr || !*arr)
 		return ;
 	i = 0;
-	while (*(arr)[i])
+	while ((*arr)[i])
 	{
-		free(*(arr)[i]);
+		free((*arr)[i]);
 		++i;
 	}
 	free(*arr);
